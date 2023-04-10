@@ -8,9 +8,7 @@ tags: macOS jamf mdm mdm-enabled local adminstrator
 
 An MDM-enabled user is an account on a macOS device that has been granted additional privileges by the Mobile Device Management (MDM) server. These privileges allow the MDM server to manage user-level settings and configurations on the device.
 
-However, having multiple MDM-enabled users on a single device can create management and security challenges. This is why it's generally recommended to have only one MDM-enabled user account. Here are some reasons behind this recommendation:
-
-It's important to note that best practices for macOS device management often recommend avoiding MDM-enabled user accounts altogether. Instead, it is advised to use standard local accounts in combination with an MDM solution like Jamf Pro
+However, having multiple MDM-enabled users on a single device can create management and security challenges. This is why it's generally recommended to have only one MDM-enabled user account. 
 
 ### Why are multiple MDM-Enabled users bad?
 
@@ -19,6 +17,8 @@ It's important to note that best practices for macOS device management often rec
 3. Limited benefits: Although MDM-enabled local accounts provide some management capabilities, they do not offer the full range of features and functionality that a properly managed device with a standard local account can provide.
 4. Configuration challenges: Configuring MDM-enabled local accounts can be complex and time-consuming. Administrators must be familiar with the intricacies of User Approved MDM and be prepared to handle issues that may arise during setup and ongoing management.
 5. Inefficient management: MDM-enabled local accounts can lead to inefficient device management, as administrators must manage both the MDM server and local account settings separately. This can result in increased administrative overhead and greater potential for configuration errors.
+
+It's important to note that best practices for macOS device management often recommend avoiding MDM-enabled user accounts altogether. Instead, it is advised to use standard local accounts in combination with an MDM solution like Jamf Pro
 
 ### How does Jamf Pro Handle the creation of an MDM-Enabled user?
 
