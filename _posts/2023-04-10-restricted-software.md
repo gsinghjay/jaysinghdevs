@@ -50,3 +50,7 @@ Restricting Safari or certain Safari features in an organization, school, or ent
 
 ### Restricting Ventura
 #### Reasoning
+
+Major operating system updates often have significant bugs at first so it's always ideal to wait one or two versions more rolling things out. Specific programs such as Adobe products still don't work properly.
+
+[Source from Adobe]([https://community.jamf.com/t5/jamf-pro/disabling-suppressing-keyboard-setup-assistant-in-sierra/m-p/202741/highlight/true#M191463](https://helpx.adobe.com/download-install/kb/macos-ventura-compatibility-common-issues.html))
