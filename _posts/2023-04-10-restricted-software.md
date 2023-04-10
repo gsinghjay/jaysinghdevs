@@ -18,7 +18,6 @@ In our higher education environment, there are three essential drivers that need
 ---
 
 
-
 ### Restricting Keyboard Setup Assistant
 #### Reasoning
 
@@ -29,3 +28,25 @@ In our academic labs and the library, peripherials especially keyboards tend to 
 While the provided script doesn't work, the last solution in the post works, but with one missing detail. Make sure to check "Kill Process" as shown below.
 
 [![Restricted Software - Keyboard Setup Assistant](/jaysinghdevs/images/restricted_software_kbsa.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software_kbsa.png)
+
+
+---
+
+
+### Restricting Safari
+#### Reasoning
+
+Restricting Safari or certain Safari features in an organization, school, or enterprise environment might be necessary for a few reasons:
+
+1. Security: Limiting Safari features or disabling the browser altogether can help minimize potential security threats from malicious websites, phishing attempts, and malware.
+2. Compliance: Organizations may need to comply with industry-specific regulations or internal policies that require them to restrict or control web browsing activities.
+3. Alternative browsers: An organization may choose to restrict Safari if they prefer using another browser with better management capabilities, security features, or compatibility with their specific infrastructure.
+
+[![Restricted Software - Safari](/jaysinghdevs/images/restricted_software_safari.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software_safari.png)
+
+
+---
+
+
+### Restricting Ventura
+#### Reasoning
