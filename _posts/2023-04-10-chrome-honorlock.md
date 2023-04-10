@@ -1,5 +1,5 @@
 ---
-title: "Honorlock"
+title: "Chrome Honorlock Extension"
 date: 2023-04-10
 tags: macOS jamf mdm chrome honorlock
 ---
