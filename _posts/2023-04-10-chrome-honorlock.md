@@ -17,9 +17,9 @@ Honorlock can be compared to LockDown Browser by Respondus. It helps ensure that
 - https://honorlock.com/
 - https://app.honorlock.com/install/extension
 
-[![Configuration Profile Page for Honorlock](/jaysinghdevs/images/policies_cat_browsers_honorlock.png)](https://gsinghjay.github.io/jaysinghdevs/images/policies_cat_browsers_honorlock.png)
+[![Configuration Profile Page for Honorlock](/images/policies_cat_browsers_honorlock.png)](https://www.jaysingh.dev/images/policies_cat_browsers_honorlock.png)
 
-[Configuration Profile](/jaysinghdevs/mobileconfig/Chrome Honorlock.mobileconfig)
+[Configuration Profile](/mobileconfig/Chrome Honorlock.mobileconfig)
 
 #### Resources To Better Handle This
 
