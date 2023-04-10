@@ -1,10 +1,8 @@
 ---
 title: "Restricted Software"
 date: 2023-04-10
-tags: macOS jamf mdm restrictions "restricted software" "Keyboard Assistant Setup"
+tags: macOS jamf mdm restrictions KeyboardSetupAssistant.app
 ---
-
-[![Restricted Software](/jaysinghdevs/images/restricted_software.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software.png)
 
 ### Restricted Software
 
@@ -14,26 +12,19 @@ In our higher education environment, there are three essential drivers that need
 2. Disable Safari
 3. Restrict Upgrade to Ventura
 
+[![Restricted Software](/jaysinghdevs/images/restricted_software.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software.png)
+
 
 ---
 
 
-[![Driver Policies](/jaysinghdevs/images/policies_cat_drivers.png)](https://gsinghjay.github.io/jaysinghdevs/images/policies_cat_drivers.png)
+### Restricting Keyboard Setup Assistant
+#### Reasoning
 
-### Zoom
-#### Zoom Audio Driver
-[![Driver Policies](/jaysinghdevs/images/policies_cat_drivers_zoom.png)](https://gsinghjay.github.io/jaysinghdevs/images/policies_cat_drivers_zoom.png)
+In our academic labs and the library, peripherials especially keyboards tend to grow legs and walk away. Either that or they get extremely dirty to the point where the lab manager or librarians will order third-party keyboards to replace existing ones. Since these are all third-party, the Keyboard Setup Assistant launches every single time an end-user logs in or uses their own keyboard (think Accessibility). 
 
-Script for Zoom Audio Driver:
+[Source from Jamf Nation](https://community.jamf.com/t5/jamf-pro/disabling-suppressing-keyboard-setup-assistant-in-sierra/m-p/202741/highlight/true#M191463)
 
-```bash
-#!/bin/sh
-cp -R /Applications/zoom.us.app/Contents/PlugIns/ZoomAudioDevice.driver /Library/Audio/Plug-Ins/HAL/
-sudo killall coreaudiod
-```
+While the provided script doesn't work, the last solution in the post works, but with one missing detail. Make sure to check "Kill Process" as shown below.
 
-This is mandatory for audio to be shared while screen sharing. If professors are having trouble sharing their sound over Zoom, the Zoom application itself must be updated as the audio driver lives within the contents of the application.
-
-[Configuration Profile](/jaysinghdevs/mobileconfig/Zoom Permissions.mobileconfig)
-
-[Source from Jamf Nation](https://community.jamf.com/t5/jamf-pro/zoom-app-asks-for-admin-credentials-when-trying-to-share-computer/m-p/142244/highlight/true#M131317)
+[![Restricted Software - Keyboard Setup Assistant](/jaysinghdevs/images/restricted_software_kbsa.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software_kbsa.png)
