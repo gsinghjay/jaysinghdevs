@@ -12,7 +12,7 @@ In our higher education environment, there are three essential drivers that need
 2. Disable Safari
 3. Restrict Upgrade to Ventura
 
-[![Restricted Software](/jaysinghdevs/images/restricted_software.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software.png)
+[![Restricted Software](/images/restricted_software.png)](https://www.jaysingh.dev/images/restricted_software.png)
 
 
 ---
@@ -27,7 +27,7 @@ In our academic labs and the library, peripherials especially keyboards tend to 
 
 While the provided script doesn't work, the last solution in the post works, but with one missing detail. Make sure to check "Kill Process" as shown below.
 
-[![Restricted Software - Keyboard Setup Assistant](/jaysinghdevs/images/restricted_software_kbsa.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software_kbsa.png)
+[![Restricted Software - Keyboard Setup Assistant](/images/restricted_software_kbsa.png)](https://www.jaysingh.dev/images/restricted_software_kbsa.png)
 
 
 ---
@@ -42,7 +42,7 @@ Restricting Safari or certain Safari features in an organization, school, or ent
 2. Compliance: Organizations may need to comply with industry-specific regulations or internal policies that require them to restrict or control web browsing activities.
 3. Alternative browsers: An organization may choose to restrict Safari if they prefer using another browser with better management capabilities, security features, or compatibility with their specific infrastructure.
 
-[![Restricted Software - Safari](/jaysinghdevs/images/restricted_software_safari.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software_safari.png)
+[![Restricted Software - Safari](/images/restricted_software_safari.png)](https://jaysingh.dev/images/restricted_software_safari.png)
 
 
 ---
@@ -53,7 +53,7 @@ Restricting Safari or certain Safari features in an organization, school, or ent
 
 Major operating system updates often have significant bugs at first so it's always ideal to wait one or two versions more rolling things out.
 
-[![Restricted Software - Install macOS Ventura](/jaysinghdevs/images/restricted_software_ventura.png)](https://gsinghjay.github.io/jaysinghdevs/images/restricted_software_ventura.png)
+[![Restricted Software - Install macOS Ventura](/images/restricted_software_ventura.png)](https://jaysingh.dev/images/restricted_software_ventura.png)
 
 Since Studio Arts is a huge subject at the college, it's important we remain on 12.6.3 for as long as possible as there are still issues with Adobe products.
 
