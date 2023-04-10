@@ -10,7 +10,7 @@ Honorlock is an extension for Google Chrome that can be compared to LockDown Bro
  - https://honorlock.com/
  - https://app.honorlock.com/install/extension
  
-[![Driver Policies](/jaysinghdevs/images/policies_cat_browsers_honorlock.png)](https://gsinghjay.github.io/jaysinghdevs/images/policies_cat_browsers_honorlock.png)
+[![Configuration Profile Page for Honorlock](/jaysinghdevs/images/policies_cat_browsers_honorlock.png)](https://gsinghjay.github.io/jaysinghdevs/images/policies_cat_browsers_honorlock.png)
 
 [Configuration Profile](/jaysinghdevs/mobileconfig/Chrome Honorlock.mobileconfig)
 
