@@ -14,13 +14,67 @@ In a nutshell, Rosetta 2 allows Intel applications to run on Apple Silicon based
 
 [Source](https://www.howtogeek.com/822889/what-is-rosetta-2-on-mac/): What Is Rosetta 2 on Mac?
 
-[![Configuration Profile Page for Honorlock](/jaysinghdevs/images/policies_cat_browsers_honorlock.png)](https://gsinghjay.github.io/jaysinghdevs/images/policies_cat_browsers_honorlock.png)
+---
 
-[Configuration Profile](/jaysinghdevs/mobileconfig/Chrome Honorlock.mobileconfig)
+#### Creating the Smart Computer Group
 
-#### Resources To Better Handle This
+- Navigate to Computers > Smart Group Groups > New
+- Display Name: Apple Silicon
+- For Criteria, when you go to Add, you may have to press `Show Advanced Criteria`. There will be one for `Apple Silicon`.
+- Set the operator to `is` and the value to `Yes`
 
-- [Force Install Chrome Extensions](https://community.jamf.com/t5/jamf-pro/force-install-chrome-extensions/m-p/264801#M243294): A Jamf Nation discussion on how to force install Chrome extensions, including the Honorlock extension.
-- [JSON Schema for Jamf Pro Applications and Settings MDM Payload](https://github.com/Jamf-Custom-Profile-Schemas/JSON-Schema-for-Jamf-Pro-Applications-and-Settings-MDM-Payload/tree/master/Google/Chrome): Custom JSON schema for managing Google Chrome settings and extensions through Jamf Pro.
-- [Chrome Browser Management with Google and Jamf](https://www.jamf.com/blog/chrome-browser-management-with-google-and-jamf-jnuc2022/): A blog post about managing Chrome browser settings and extensions using Jamf and Google Workspace.
-- [Install the Honorlock Extension](https://honorlock.kb.help/install-the-honorlock-extension/): A step-by-step guide on how to install the Honorlock extension for various platforms.
+#### Creating the Script
+
+```bash
+#!/bin/bash
+
+# Installs Rosetta as needed on Apple Silicon Macs.
+
+exitcode=0
+
+# Determine OS version
+# Save current IFS state
+
+OLDIFS=$IFS
+
+IFS='.' read osvers_major osvers_minor osvers_dot_version <<< "$(/usr/bin/sw_vers -productVersion)"
+
+# restore IFS to previous state
+
+IFS=$OLDIFS
+
+# Check to see if the Mac is reporting itself as running macOS 11
+
+if [[ ${osvers_major} -ge 11 ]]; then
+
+  # Check to see if the Mac needs Rosetta installed by testing the processor
+
+  processor=$(/usr/sbin/sysctl -n machdep.cpu.brand_string | grep -o "Intel")
+  
+  if [[ -n "$processor" ]]; then
+    echo "$processor processor installed. No need to install Rosetta."
+  else
+
+    # Check for Rosetta "oahd" process. If not found,
+    # perform a non-interactive install of Rosetta.
+    
+    if /usr/bin/pgrep oahd >/dev/null 2>&1; then
+        echo "Rosetta is already installed and running. Nothing to do."
+    else
+        /usr/sbin/softwareupdate --install-rosetta --agree-to-license
+       
+        if [[ $? -eq 0 ]]; then
+        	echo "Rosetta has been successfully installed."
+        else
+        	echo "Rosetta installation failed!"
+        	exitcode=1
+        fi
+    fi
+  fi
+  else
+    echo "Mac is running macOS $osvers_major.$osvers_minor.$osvers_dot_version."
+    echo "No need to install Rosetta on this version of macOS."
+fi
+
+exit $exitcode
+```
