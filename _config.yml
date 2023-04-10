@@ -16,9 +16,7 @@
 title: Jay's Blog
 email: singhjay@live.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Expert IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth.
 twitter_username: jaysinghdevs
 github_username: gsinghjay
 minimal_mistakes_skin: default
@@ -60,7 +58,7 @@ plugins:
 author:
   name   : "First Lastname"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Expert IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
