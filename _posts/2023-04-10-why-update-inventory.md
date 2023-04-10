@@ -21,4 +21,4 @@ In conclusion, updating inventory after every policy update in a Jamf Pro enviro
 
 [Source from Jamf Pro Documentation](https://learn.jamf.com/bundle/jamf-pro-documentation-current/page/Computer_Inventory_Information.html)
 
-<insert picture of `Maintenance` under `Options`.
+<insert picture of `Maintenance` under `Options`>
