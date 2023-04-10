@@ -25,7 +25,7 @@ In a nutshell, Rosetta 2 allows Intel applications to run on Apple Silicon based
 - For Criteria, when you go to Add, you may have to press `Show Advanced Criteria`. There will be one for `Apple Silicon`.
 - Set the operator to `is` and the value to `Yes`
 
-[![Rosetta Policies](/jaysinghdevs/images/rosetta2onm1/creating_smartgroup.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_smartgroup.png)
+[![Creating Smart Computer Groups](/jaysinghdevs/images/rosetta2onm1/creating_smartgroup.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_smartgroup.png)
 
 #### 2. Creating the Script
 
@@ -86,6 +86,7 @@ exit $exitcode
 #### 3. Create the Policy
 
 - Make sure the Trigger is set to `Enrollment Complete` and the Execution Frequency is set to Ongoing
+- Ensure the scope is set to the Smart Computer Group we just created
 
 [![Install Rosetta Policy](/jaysinghdevs/images/rosetta2onm1/creating_policy.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_policy.png)
 
