@@ -16,14 +16,14 @@ In a nutshell, Rosetta 2 allows Intel applications to run on Apple Silicon based
 
 ---
 
-#### Creating the Smart Computer Group
+#### 1. Creating the Smart Computer Group
 
 - Navigate to Computers > Smart Group Groups > New
 - Display Name: Apple Silicon
 - For Criteria, when you go to Add, you may have to press `Show Advanced Criteria`. There will be one for `Apple Silicon`.
 - Set the operator to `is` and the value to `Yes`
 
-#### Creating the Script
+#### 2. Creating the Script
 
 ```bash
 #!/bin/bash
@@ -78,3 +78,9 @@ fi
 
 exit $exitcode
 ```
+
+#### 3. Create the Policy
+
+- Make sure the Trigger is set to `Enrollment Complete` and the Execution Frequency is set to Ongoing
+
+<insert picture here>
