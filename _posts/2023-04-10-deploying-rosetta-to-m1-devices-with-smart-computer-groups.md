@@ -8,7 +8,7 @@ tags: macOS jamf mdm m1 rosetta silicon DEPNotify
 
 Not all apps are universal and at the time of this post, Jamf has not released patch management for Intel and Apple Silicon based devices separately. In this environment, a majority of our devices are Intel based. If a universal package is not available, we default to using the Intel version of the package we're trying to deploy or update. Because of this, we install Rosetta depending on whether if the computer is Apple Silicon based or not through Smart Computer Groups.
 
-[![Rosetta Policies](/jaysinghdevs/images/policies_cat_enrollment_installrosetta.png)](https://www.jaysingh.dev/images/policies_cat_enrollment_installrosetta.png)
+[![Rosetta Policies](/images/policies_cat_enrollment_installrosetta.png)](https://www.jaysingh.dev/images/policies_cat_enrollment_installrosetta.png)
 
 #### What is it?
 
@@ -25,7 +25,7 @@ In a nutshell, Rosetta 2 allows Intel applications to run on Apple Silicon based
 - For Criteria, when you go to Add, you may have to press `Show Advanced Criteria`. There will be one for `Apple Silicon`.
 - Set the operator to `is` and the value to `Yes`
 
-[![Creating Smart Computer Groups](/jaysinghdevs/images/rosetta2onm1/creating_smartgroup.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_smartgroup.png)
+[![Creating Smart Computer Groups](/images/rosetta2onm1/creating_smartgroup.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_smartgroup.png)
 
 #### 2. Creating the Script
 
@@ -88,7 +88,7 @@ exit $exitcode
 - Make sure the Trigger is set to `Enrollment Complete` and the Execution Frequency is set to Ongoing
 - Ensure the scope is set to the Smart Computer Group we just created
 
-[![Install Rosetta Policy](/jaysinghdevs/images/rosetta2onm1/creating_policy.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_policy.png)
+[![Install Rosetta Policy](/images/rosetta2onm1/creating_policy.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_policy.png)
 
 #### What about DEPNotify?
 
