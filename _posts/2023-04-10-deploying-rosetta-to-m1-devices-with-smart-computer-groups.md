@@ -8,6 +8,8 @@ tags: macOS jamf mdm m1 rosetta silicon DEPNotify
 
 Not all apps are universal and at the time of this post, Jamf has not released patch management for Intel and Apple Silicon based devices separately. In this environment, a majority of our devices are Intel based. If a universal package is not available, we default to using the Intel version of the package we're trying to deploy or update. Because of this, we install Rosetta depending on whether if the computer is Apple Silicon based or not through Smart Computer Groups.
 
+[![Rosetta Policies](/jaysinghdevs/images/policies_cat_enrollment_installrosetta.png)](https://www.jaysingh.dev/images/policies_cat_enrollment_installrosetta.png)
+
 #### What is it?
 
 In a nutshell, Rosetta 2 allows Intel applications to run on Apple Silicon based devices.
@@ -22,6 +24,8 @@ In a nutshell, Rosetta 2 allows Intel applications to run on Apple Silicon based
 - Display Name: Apple Silicon
 - For Criteria, when you go to Add, you may have to press `Show Advanced Criteria`. There will be one for `Apple Silicon`.
 - Set the operator to `is` and the value to `Yes`
+
+[![Rosetta Policies](/jaysinghdevs/images/rosetta2onm1/creating_smartgroup.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_smartgroup.png)
 
 #### 2. Creating the Script
 
@@ -83,4 +87,30 @@ exit $exitcode
 
 - Make sure the Trigger is set to `Enrollment Complete` and the Execution Frequency is set to Ongoing
 
-<insert picture here>
+[![Install Rosetta Policy](/jaysinghdevs/images/rosetta2onm1/creating_policy.png)](https://www.jaysingh.dev/images/rosetta2onm1/creating_policy.png)
+
+#### What about DEPNotify?
+
+- Out of all my policies, this is the only one that that is triggered to install during enrollment.
+- Through my own testing, it's important not to have more than two policies trigger to install during enrollment as that could cause the Jamf binary to fail during the enrollment process.
+- If you're curious about DEPNotify, please refer to this article: <coming soon>. Below is a screenshot of the policies being installed in my depNotify.sh:
+  
+```bash
+  
+#########################################################################################
+# Policy Variable to Modify
+#########################################################################################
+# The policy array must be formatted "Progress Bar text,customTrigger". These will be
+# run in order as they appear below.
+  POLICY_ARRAY=(
+    "Installing Adobe Creative Cloud,install-creativecloud"
+    "Installing Google Chrome,install-chrome"
+    "Installing Webex,install-webex"
+    "Installing Zoom,install-zoom"
+    "Installing Webex Drivers,install-webex-driver"
+    "Installing Zoom Drivers,install-zoom-driver"
+    "Installing Custom Dock,set-dock"
+    "Preparing for the next login,uninstall-depnotify-installers"
+  )
+```
+  
