@@ -20,7 +20,7 @@ However, having multiple MDM-enabled users on a single device can create managem
 
 It's important to note that best practices for macOS device management often recommend avoiding MDM-enabled user accounts altogether. Instead, it is advised to use standard local accounts in combination with an MDM solution like Jamf Pro
 
-### How does Jamf Pro Handle the creation of an MDM-Enabled user?
+### How can we leverage Jamf Pro to utilize an MDM-Enabled user?
 
 Sources:
 - https://community.jamf.com/t5/jamf-pro/admin-account-best-practice/m-p/278364
