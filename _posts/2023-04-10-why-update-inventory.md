@@ -1,3 +1,9 @@
+---
+title: "Why I Update Inventory After Every Policy Update"
+date: 2023-04-10
+tags: macOS jamf mdm inventory policy
+---
+
 ### Why I Update Inventory After Every Policy Update
 
 Aside from the Jamf representative telling me it was best practice, I want to do a deep dive on why this is the case.
