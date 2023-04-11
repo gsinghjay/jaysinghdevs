@@ -26,12 +26,6 @@ In this guide, we'll walk you through the process of integrating VPP with Jamf P
 
 4. Specify the quantity and click 'Get' to acquire the app.
 
-[![Specific Quality](/images/vpp-sbs/03apple-school-get-licenses.png)](https://www.jaysingh.dev/images/vpp-sbs/03apple-school-get-licenses.png)
-
-5. Verify that the licenses have been purchased.
-
-[![Succesful Purchasing](/images/vpp-sbs/04-apple-school-licenses-sucessful.png)](https://www.jaysingh.dev/images/vpp-sbs/04-apple-school-licenses-sucessful.png)
-
 ### Step 2: Assign the App in Volume Content in Jamf Pro
 
 1. Log in to your Jamf Pro instance.
