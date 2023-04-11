@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth.
 twitter_username: jaysinghdevs
 github_username: gsinghjay
-minimal_mistakes_skin: air 
+minimal_mistakes_skin: default 
 search: true
 
 # Build settings
