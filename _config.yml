@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jay's Blog
+title: Jay's Professional Development
 email: singhjay@live.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Expert IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth.
+  IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth.
 twitter_username: jaysinghdevs
 github_username: gsinghjay
 minimal_mistakes_skin: default
@@ -58,32 +58,32 @@ plugins:
 author:
   name   : "Jay Singh"
   avatar : "/assets/images/bio-photo.png"
-  bio    : "Expert IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth."
+  bio    : "IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://www.jaysingh.dev"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/jaysinghdevs"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/gsinghjay"
+  # - label: "Instagram"
+  #   icon: "fab fa-fw fa-instagram"
+  #   url: "https://instagram.com/"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/jaysinghdevs"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/gsinghjay"
+  # - label: "Instagram"
+  #   icon: "fab fa-fw fa-instagram"
+  #   url: "https://instagram.com/"
 
 defaults:
   # _posts
