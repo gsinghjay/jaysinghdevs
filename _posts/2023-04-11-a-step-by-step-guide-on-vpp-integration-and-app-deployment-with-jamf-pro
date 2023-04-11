@@ -1,0 +1,44 @@
+---
+title: "A Step-by-Step Guide on VPP Integration and App Deployment with Jamf Pro"
+date: 2023-04-10
+categories:
+  - Jamf
+  - VPP
+tags:
+  - Apple School Manager
+  - Apple Business Manager
+  - Volume Purchase Program
+  - Jamf Pro
+  - App Deployment
+---
+In this guide, we'll walk you through the process of integrating VPP with Jamf Pro and deploying an app to a group using Apple School Manager (ASM) and Jamf Pro. By following these steps, you'll be able to efficiently distribute apps to your organization's devices using VPP.
+
+### Step 1: Acquire the App through ASM
+
+1. Log in to your Apple School Manager account.
+2. Navigate to the 'Apps and Books' section.
+3. Search for the desired app and select it.
+4. Specify the quantity and click 'Get' to acquire the app.
+
+### Step 2: Assign the App in Volume Content in Jamf Pro
+
+1. Log in to your Jamf Pro instance.
+2. Go to 'Devices' > 'Apps' > 'Volume Content'.
+3. Click 'New' and choose 'Mobile Device App' or 'Mac App', depending on the app type.
+4. Enter the app's name and click 'Next'.
+5. Select the VPP account to associate with the app and click 'Next'.
+6. Review the app information and click 'Save'.
+
+### Step 3: Deploy the App to a Group
+
+1. In Jamf Pro, navigate to 'Devices' > 'Apps' > 'Volume Content'.
+2. Locate the app you want to deploy and click its name.
+3. In the 'General' tab, scroll down to the 'App Assignment' section.
+4. Select the 'User-Based VPP' or 'Device-Based VPP' assignment method.
+5. Click the 'Add' button in the 'Scope' tab.
+6. Select the group you want to deploy the app to and click 'Add'.
+7. Click 'Save'.
+
+By following these steps, you can successfully integrate VPP with Jamf Pro and deploy apps to your organization's devices using Apple School Manager and Jamf Pro.
+
+[Source from Jamf Pro Documentation](https://docs.jamf.com/10.26.0/jamf-pro/administrator-guide/Integrating_with_Volume_Purchasing.html)
