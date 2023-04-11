@@ -117,8 +117,8 @@ tag_archive:
   type: liquid
   path: /tags/
   
-  analytics:
-    provider: "google-gtag"
-    google:
-      tracking_id: "G-FPR3V0EEB4"
-      anonymize_ip: false # default
+analytics:
+  provider: "google-gtag"
+  google:
+  tracking_id: "G-FPR3V0EEB4"
+  anonymize_ip: false # default
