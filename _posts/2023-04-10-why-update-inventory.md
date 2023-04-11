@@ -17,9 +17,6 @@ tags:
   - Compliance
   - License Management
 ---
-
-### The Importance of Updating Inventory After Policy Changes in Jamf Pro
-
 In a Jamf Pro environment, updating inventory after every policy update is considered a best practice for several reasons:
 
 1. **Accurate information**: Updating the inventory ensures that the information in the Jamf Pro server is up-to-date, reflecting the most recent changes made by the executed policies. This helps administrators make better decisions based on accurate device and user data.
