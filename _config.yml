@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: "Jay's Tech Portfolio & Blog: Jamf Pro, macOS, Web Development & Cloud Enthusiast"
+title: Jay's Tech Portfolio & Blog: Jamf Pro, macOS, Web Development & Cloud Enthusiast
 email: singhjay@live.com
 description: >- # this means to ignore newlines until "baseurl:"
   IT professional with a strong emphasis on Jamf and macOS management, dedicated to enhancing operational efficiency and problem-solving. Passionate about leveraging cloud technologies in projects and committed to continuous learning for career development and growth.
