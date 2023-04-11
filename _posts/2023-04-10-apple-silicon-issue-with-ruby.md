@@ -1,7 +1,16 @@
 ---
 title: "Trouble Installing Ruby on Apple Silicon?"
 date: 2023-04-10
-tags: macOS silicon m1 macbook ruby jekyll issues github pages
+categories:
+  - Troubleshooting
+tags:
+  - macOS
+  - Apple Silicon
+  - M1
+  - Macbook
+  - Ruby
+  - Jekyll
+  - Github Pages
 ---
 
 ### Why?
