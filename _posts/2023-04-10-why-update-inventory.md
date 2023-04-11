@@ -2,8 +2,8 @@
 title: "The Importance of Updating Inventory After Policy Changes in Jamf Pro"
 date: 2023-04-10
 categories:
-  - Jamf Pro
-  - Device Management
+  - Jamf-Pro
+  - Device-Management
 tags:
   - macOS
   - Apple Silicon
