@@ -1,7 +1,15 @@
 ---
-title: "Why You Only Need One MDM-Enabled User"
+title: "The Significance of Having Only One MDM-Enabled User in Jamf Pro"
 date: 2023-04-10
-tags: macOS jamf mdm mdm-enabled local adminstrator
+tags: 
+- macOS
+- Jamf Pro
+- MDM-enabled
+- local administrator
+- device management
+categories:
+- Jamf-Pro
+- Device-Management
 ---
 
 ### What is an MDM-Enabled User?
