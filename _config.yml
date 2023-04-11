@@ -104,6 +104,11 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # comments
+  - comments:
+    provider: "disqus"
+    disqus:
+      shortname: "shortname"
 
 category_archive:
   type: liquid
